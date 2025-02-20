@@ -1,0 +1,282 @@
+.mainbar {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  top: 0;
+}
+
+.mainbarLeft {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.mainbarCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 10;
+}
+
+.mainbarCenterOption {
+  display: flex;
+}
+
+.mainbarCenterOption span {
+  padding: 15px;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+.mainbarCenterOption span:hover {
+  background-color: #303030;
+  cursor: pointer;
+}
+
+.mainbarCenterOption span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainbarRight {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+.mainbarRightOption,
+.mainbarRightOptionPill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainbarRightOption span {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  overflow: hidden;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainbarRightOptionPill span {
+  padding: 10px 20px;
+  border-radius: 100px;
+  overflow: hidden;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.mainbarRightOptionPill span:hover {
+  cursor: pointer;
+  background-color: #303030;
+}
+
+.mainbarRightOption span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainbarRightOptionCreate {
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.mainbarRightOptionCreate:hover {
+  background-color: #303030;
+  cursor: pointer;
+}
+
+.mainbarRightOption img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.mainProfileBar {
+  position: fixed;
+  right: 10px;
+  top: 65px;
+  width: 300px;
+  background-color: #303030;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.mainProfileBarOption {
+  padding: 12.5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.mainProfileBarOption i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.mainProfileBarOptionProfileImage {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  overflow: hidden;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainProfileBarOptionProfileImage img {
+  display: block; /* Prevents spacing below images */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mainProfileBarOptionProfile {
+  display: flex;
+}
+
+.mainProfileBarOptionProfileDetails {
+  margin-left: 10px;
+}
+
+.mainProfileBarOptionProfileDetails p {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mainProfileBarOptionProfileDetails p i {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5px;
+  color: gold;
+}
+
+.mainProfileBarOptionProfileDetails span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mainProfileBarOption:hover {
+  background-color: #252525;
+  cursor: pointer;
+}
+
+.mainMobileBar {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .mainbarCenterOption,
+  .mainbarRightOptionCreate {
+    display: none;
+  }
+
+  .mainbarLeft {
+    margin-left: 10px;
+  }
+
+  .mainbarRight {
+    margin-right: 10px;
+  }
+
+  .mainProfileBar {
+    position: fixed;
+    right: 20px;
+    top: 65px;
+    width: 275px;
+    background-color: #202020;
+    border-radius: 10px;
+  }
+
+  .mainMobileBar {
+    display: block;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(to top, #050505, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .mainMobileBarOptions {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .mainMobileBarOption {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2.5px;
+  }
+
+  .mainMobileBarOption i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22.5px;
+  }
+
+  .mainMobileBarOption span p {
+    font-size: 11px;
+    margin-top: 2.5px;
+  }
+
+  .mainbarRightOptionCreate {
+    display: none;
+  }
+
+  .mainbarCenter {
+    flex: 10;
+  }
+
+  .mainbarRightOptionCreate {
+    display: none;
+  }
+}
+
+.mainbarCenterOption span:active,
+.mainbarRightOptionCreate:active,
+.mainMobileBarOption:active,
+.mainProfileBarOption:active,
+.mainbarRightOptionPill:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
