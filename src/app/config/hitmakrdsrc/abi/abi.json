@@ -303,6 +303,12 @@
 				"internalType": "uint256",
 				"name": "price",
 				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint16",
+				"name": "platformFee",
+				"type": "uint16"
 			}
 		],
 		"name": "EditionCreated",
@@ -506,7 +512,20 @@
 	},
 	{
 		"inputs": [],
-		"name": "PLATFORM_FEE",
+		"name": "COLLECTORS_PLATFORM_FEE",
+		"outputs": [
+			{
+				"internalType": "uint16",
+				"name": "",
+				"type": "uint16"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "LICENSING_PLATFORM_FEE",
 		"outputs": [
 			{
 				"internalType": "uint16",
@@ -697,6 +716,11 @@
 				"internalType": "bool",
 				"name": "isCreated",
 				"type": "bool"
+			},
+			{
+				"internalType": "uint16",
+				"name": "platformFee",
+				"type": "uint16"
 			}
 		],
 		"stateMutability": "view",
@@ -797,6 +821,11 @@
 				"internalType": "bool",
 				"name": "isCreated",
 				"type": "bool"
+			},
+			{
+				"internalType": "uint16",
+				"name": "platformFee",
+				"type": "uint16"
 			}
 		],
 		"stateMutability": "view",
